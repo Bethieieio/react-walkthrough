@@ -46,12 +46,12 @@ return (
         <h1 className={styles.Header}>sign up</h1>
 
         <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="">
-                <Form.Label className="d-none">Username</Form.Label>
-                <Form.Control className={styles.Input} type="text"
-                    placeholder="Enter username" name="username"
-                    value={username} onChange={handleChange}/>
-            </Form.Group>
+                <Form.Group controlId="">
+                    <Form.Label className="d-none">Username</Form.Label>
+                    <Form.Control className={styles.Input} type="text"
+                        placeholder="Enter username" name="username"
+                        value={username} onChange={handleChange}/>
+                </Form.Group>
             {errors.username?.map((message, idx) =>
                 <Alert variant="warning" key={idx}>{message}</Alert>
             )}
